@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Circe-Light';
+  src: url('/font/Circe-Rounded/CirceRounded-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Circe-Regular';
+  src: url('/font/Circe-Rounded/CirceRounded-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Circe-Bold';
+  src: url('/font/Circe-Rounded/CirceRounded-Bold.otf') format('opentype');
+}
+
+
+.font-circe_light {
+  font-family: 'Circe-Light', sans-serif;
+}
+.font-circe_regular {
+  font-family: 'Circe-Regular', sans-serif;
+}
+
+.font-circe_bold {
+  font-family: 'Circe-Bold', sans-serif;
+}
