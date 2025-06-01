@@ -2,12 +2,10 @@
   font-family: 'Circe-Light';
   src: url('/font/Circe-Rounded/CirceRounded-Light.otf') format('opentype');
 }
-
 @font-face {
   font-family: 'Circe-Regular';
   src: url('/font/Circe-Rounded/CirceRounded-Regular.otf') format('opentype');
 }
-
 @font-face {
   font-family: 'Circe-Bold';
   src: url('/font/Circe-Rounded/CirceRounded-Bold.otf') format('opentype');
@@ -20,7 +18,33 @@
 .font-circe_regular {
   font-family: 'Circe-Regular', sans-serif;
 }
-
 .font-circe_bold {
   font-family: 'Circe-Bold', sans-serif;
 }
+
+.marquee-left {
+  animation: marquee-left 20s linear infinite;
+}
+
+@keyframes marquee-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      /* transform: translateX(calc(-50% - 48px)); */
+      transform: translateX(-10%);
+    }
+  }
+
+.marquee-right {
+  animation: marquee-right 20s linear infinite;
+}
+
+@keyframes marquee-right {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(30%);
+    }
+  }
