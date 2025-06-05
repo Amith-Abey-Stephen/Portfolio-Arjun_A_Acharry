@@ -27,12 +27,8 @@
 }
 
 @keyframes marquee-left {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      /* transform: translateX(calc(-50% - 48px)); */
-      transform: translateX(-10%);
+    to {
+        transform: translate(calc(-80% - 0.5rem));
     }
   }
 

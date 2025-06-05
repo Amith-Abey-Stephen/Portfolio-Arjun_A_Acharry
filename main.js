@@ -1,4 +1,4 @@
-const WorkFields = ['Web Design','App Design', 'Wireframe', 'Database Design', 'Graphic Design'];
+const WorkFields = ['Web Design','App Design', 'Wireframe', 'UI/UX', 'Graphic Design'];
 const workFieldElements = WorkFields.map(dataPoint => {
     return `
     <div class="flex  gap-24 text-white">
