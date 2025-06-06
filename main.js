@@ -19,11 +19,22 @@ const workCompanyElements = WorkCompanies.map(dataPoint => {
 ` }).join('');
 document.querySelector('.work-company').innerHTML = workCompanyElements;
 
+
+
+
 const nav_center = document.querySelector('.navbar-center');
 window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 100) {
-        nav_center.style.boxShadow = '1px 1px 5px grey';
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight;
+    const clientHeight = document.documentElement.clientHeight;
+
+    // Check if at bottom of page
+    const atBottom = scrollTop + clientHeight >= scrollHeight;
+
+    if (scrollTop > 100 && !atBottom) {
+        nav_center.style.boxShadow = '1px 1px 10px 5px rgba(204, 204, 204, 0.2)';
     } else {
         nav_center.style.boxShadow = 'none';
     }
 });
+
