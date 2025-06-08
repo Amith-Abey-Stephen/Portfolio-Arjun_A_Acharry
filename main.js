@@ -23,15 +23,21 @@ document.querySelector('.work-company').innerHTML = workCompanyElements;
 
 
 const nav_center = document.querySelector('.navbar-center');
+
 window.addEventListener('scroll', () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const scrollHeight = document.documentElement.scrollHeight;
     const clientHeight = document.documentElement.clientHeight;
 
-    // Check if at bottom of page
     const atBottom = scrollTop + clientHeight >= scrollHeight;
 
-    if (scrollTop > 100 && !atBottom) {
+    // Detect if it's mobile (adjust width as needed, e.g., 768px or 600px)
+    const isMobile = window.innerWidth <= 768;
+
+    // Use different threshold based on device type
+    const threshold = isMobile ? 5 : 100;
+
+    if (scrollTop > threshold && !atBottom) {
         nav_center.style.boxShadow = '1px 1px 10px 5px rgba(204, 204, 204, 0.2)';
     } else {
         nav_center.style.boxShadow = 'none';

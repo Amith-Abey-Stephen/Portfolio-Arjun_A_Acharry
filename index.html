@@ -13,14 +13,14 @@
 <body class="font-circe_regular bg-white overflow-x-hidden">
 
     <!-- Navbar -->
-    <section class="navbar bg-white flex pt-8 px-24 ">
+    <section class="navbar bg-white flex md:pt-8 md:px-24 ">
         <div class="navbar-start hidden md:block ">
             <div role="button" class="btn btn-ghost hover:bg-white border-none hover:shadow-none"> 
                 <a href="/index.html" class="text-lg">Arjun A Acharry</a>
             </div>
         </div>
         
-        <ul class="navbar-center font-circe_light    shadow-lg lg:shadow-none bg-white fixed md:top-8 top-[calc(100%-8rem)] left-1/2 transform -translate-x-1/2 rounded-full z-10 ">
+        <ul class="navbar-center font-circe_light shadow-lg lg:shadow-none bg-white fixed md:top-8 top-[calc(100%-8rem)] left-1/2 transform -translate-x-1/2 rounded-full z-10 ">
             <a class="btn btn-ghost hover:bg-white border-none text-lg text-black "><li>Home</li></a>
             <a class="btn btn-ghost text-lg text-gray-600" href="#home"><li>About</li></a>
             <a class="btn btn-ghost text-lg text-gray-600" href="#work"><li>Work</li></a>
@@ -30,7 +30,7 @@
         <div class="navbar-end hidden md:block  ">
             <button class="btn btn-ghost  bg-black text-white hover:bg-gray-800 rounded-full flex space-x-2 justify-self-end">
                 <p>User Journey</p>
-                <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                <svg id="user-journey-icon" width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg" >
                 <path d="M5.14984e-05 10.7099L5.14984e-05 2.28995C-0.000430107 1.95753 0.0932369 1.63178 0.27021 1.35039C0.447184 1.06901 0.700227 0.843489 1.00005 0.699947C1.35579 0.531914 1.75158 0.467195 2.14232 0.513164C2.53305 0.559133 2.90302 0.713941 3.21005 0.959947L8.31005 5.16995C8.50068 5.33516 8.65357 5.53943 8.75835 5.7689C8.86313 5.99837 8.91736 6.24768 8.91736 6.49995C8.91736 6.75221 8.86313 7.00152 8.75835 7.23099C8.65357 7.46047 8.50068 7.66473 8.31005 7.82995L3.21005 12.0399C2.90302 12.286 2.53305 12.4408 2.14232 12.4867C1.75158 12.5327 1.35579 12.468 1.00005 12.2999C0.700227 12.1564 0.447184 11.9309 0.27021 11.6495C0.0932369 11.3681 -0.000430107 11.0424 5.14984e-05 10.7099Z" fill="white"/>
                 </svg>
             </button>
@@ -38,7 +38,7 @@
     </section>
 
     <!-- Hero Section -->
-    <section class="hero h-[100%] w-[100vw] flex justify-center items-center lg:p-24 lg:pb-30 ">
+    <section class="hero  flex justify-center items-center lg:p-24 lg:pb-30 ">
         <div class="hero-content text-center ">
             <div class="flex flex-col items-center justify-center ">
             
@@ -91,7 +91,7 @@
     <!-- About Section -->
     <section class="flex flex-col items-center justify-center bg-white pb-16" >
         <div class="container py-12 ">
-            <p class="text-4xl text-center text-gray-700 mx-56 ">
+            <p class="text-4xl text-center text-gray-700 md:mx-56 ">
                 I’m Arjun A Acharry, and I design user-first experiences that are simple, intuitive, 
                 and impactful. I focus on crafting clean, functional interfaces that solve real problems
                  — blending design thinking with tech insight to make products people love to use.
@@ -102,9 +102,9 @@
 
         <div class="font-circe_light flex flex-col items-center justify-start bg-white pb-8">
             <h1 class="text-xl">--- Achievements ---</h1>
-            <div class="flex flex-row justify-center mx-8 pt-8 gap-4">
+            <div class="flex flex-col md:flex-row justify-center md:mx-8 md:pt-8 gap-4">
                 
-                <div class="flex flex-col items-center justify-center gap-4 w-1/5">
+                <div class="flex flex-col items-center justify-center gap-4 md:w-1/5">
                     <div class="">
                         <img src="/assets/graduation.png" alt="">
                     </div>
@@ -115,7 +115,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col items-center justify-start gap-4 w-2/5">
+                <div class="flex flex-col items-center justify-start gap-4 md:w-2/5">
                     <div class="">
                         <img src="/assets/olabs.png" alt="" class="rounded-box">
                     </div>
@@ -126,7 +126,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col items-center justify-center gap-4 w-1/5">
+                <div class="flex flex-col items-center justify-center gap-4 md:w-1/5">
                     <div class="">
                         <img src="/assets/yip.png" alt="">
                     </div>
@@ -140,9 +140,9 @@
         </div>
 
         <!-- WorkRoom -->
-        <div class="font-circe_light flex flex-col items-center justify-start bg-white py-4">
+        <div class="font-circe_light flex flex-col md:flex-col items-center justify-start bg-white py-4">
             <h1 class="text-xl">--- The Workroom ---</h1>
-            <div class="flex flex-row justify-center mx-8 py-8 gap-8">
+            <div class="flex flex-col md:flex-row justify-center md:mx-8 md:py-8 gap-8">
                 
                 <div class="card bg-base-100 w-96 shadow-sm ">
                     <img src="/assets/Gigwork.png" alt="Shoes" />
@@ -261,7 +261,7 @@
                     <p class="px-6 py-4 text-xl">
                         You're in the right place. I craft intuitive, user-centered experiences that not only <br>look great but work beautifully. Let’s collaborate — tell me what you need, and we’ll <br>design something users will love.
                     </p>
-                    <div class="flex gap-8 mt-8">
+                    <div class="flex flex-col md:flex-row gap-2 md:gap-8 mt-8">
                         <button class="btn btn-ghost btn-lg bg-black text-white rounded-full flex space-x-2 justify-self-end">
                             <p class="">Email Me</p>
                         </button>
