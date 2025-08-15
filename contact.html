@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Arjun A Acharry</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+ <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        .font-circe_light {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+        }
+        
+        .btn-ghost:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+    </style>
+
+<body class="font-circe_regular bg-white overflow-x-hidden">
+
+    <!-- Navbar -->
+      <nav class="bg-white flex md:pt-8 md:px-24">
+        <!-- Logo/Brand - Hidden on mobile, shown on desktop -->
+        <div class="navbar-start hidden md:block">
+            <div role="button" class="btn btn-ghost hover:bg-white border-none hover:shadow-none"> 
+                <a href="/index.html" class="text-lg">Arjun A Acharry</a>
+            </div>
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <div class="navbar-center font-circe_light shadow-lg lg:shadow-none bg-white hidden md:flex rounded-full">
+            <a class="btn btn-ghost hover:bg-white border-none text-lg text-black"><span>Home</span></a>
+            <a class="btn btn-ghost text-lg text-gray-600 hover:text-black" href="/about.html"><span>About</span></a>
+            <a class="btn btn-ghost text-lg text-gray-600 hover:text-black" href="/work.html"><span>Work</span></a>
+            <a class="btn btn-ghost text-lg text-gray-600 hover:text-black" href="/contact.html"><span>Contact</span></a>
+        </div>
+        
+        <!-- Desktop CTA Button -->
+        <div class="navbar-end hidden md:block">
+            <button class="btn btn-ghost bg-black text-white hover:bg-gray-800 rounded-full flex space-x-2 justify-self-end">
+                <p>User Journey</p>
+                <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.14984e-05 10.7099L5.14984e-05 2.28995C-0.000430107 1.95753 0.0932369 1.63178 0.27021 1.35039C0.447184 1.06901 0.700227 0.843489 1.00005 0.699947C1.35579 0.531914 1.75158 0.467195 2.14232 0.513164C2.53305 0.559133 2.90302 0.713941 3.21005 0.959947L8.31005 5.16995C8.50068 5.33516 8.65357 5.53943 8.75835 5.7689C8.86313 5.99837 8.91736 6.24768 8.91736 6.49995C8.91736 6.75221 8.86313 7.00152 8.75835 7.23099C8.65357 7.46047 8.50068 7.66473 8.31005 7.82995L3.21005 12.0399C2.90302 12.286 2.53305 12.4408 2.14232 12.4867C1.75158 12.5327 1.35579 12.468 1.00005 12.2999C0.700227 12.1564 0.447184 11.9309 0.27021 11.6495C0.0932369 11.3681 -0.000430107 11.0424 5.14984e-05 10.7099Z" fill="white"/>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Mobile brand centered at top -->
+        <div class="w-full flex justify-center items-center py-4 md:hidden">
+            <a href="/index.html" class="text-lg font-medium text-black">Arjun A Acharry</a>
+        </div>
+    </nav>
+
+    <!-- Mobile Bottom Navigation -->
+    <div class="md:hidden fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-sm px-4">
+        <div class="font-circe_light shadow-lg bg-white rounded-full px-3 py-2">
+            <div class="flex items-center justify-between space-x-2">
+                <a class="px-2 py-2 rounded-full text-xs font-medium text-black bg-gray-100 transition-all duration-200 flex-shrink-0" href="/index.html">Home</a>
+                <a class="px-2 py-2 rounded-full text-xs font-medium text-gray-600 hover:text-black hover:bg-gray-100 transition-all duration-200 flex-shrink-0" href="/about.html">About</a>
+                <a class="px-2 py-2 rounded-full text-xs font-medium text-gray-600 hover:text-black hover:bg-gray-100 transition-all duration-200 flex-shrink-0" href="/work.html">Work</a>
+                <a class="px-2 py-2 rounded-full text-xs font-medium text-gray-600 hover:text-black hover:bg-gray-100 transition-all duration-200 flex-shrink-0" href="/contact.html">Contact</a>
+                <button class="bg-black text-white hover:bg-gray-800 px-2 py-2 rounded-full flex items-center space-x-1 transition-all duration-200 text-xs flex-shrink-0">
+                    <span>Journey</span>
+                    <svg width="6" height="8" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.14984e-05 10.7099L5.14984e-05 2.28995C-0.000430107 1.95753 0.0932369 1.63178 0.27021 1.35039C0.447184 1.06901 0.700227 0.843489 1.00005 0.699947C1.35579 0.531914 1.75158 0.467195 2.14232 0.513164C2.53305 0.559133 2.90302 0.713941 3.21005 0.959947L8.31005 5.16995C8.50068 5.33516 8.65357 5.53943 8.75835 5.7689C8.86313 5.99837 8.91736 6.24768 8.91736 6.49995C8.91736 6.75221 8.86313 7.00152 8.75835 7.23099C8.65357 7.46047 8.50068 7.66473 8.31005 7.82995L3.21005 12.0399C2.90302 12.286 2.53305 12.4408 2.14232 12.4867C1.75158 12.5327 1.35579 12.468 1.00005 12.2999C0.700227 12.1564 0.447184 11.9309 0.27021 11.6495C0.0932369 11.3681 -0.000430107 11.0424 5.14984e-05 10.7099Z" fill="white"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-10 px-2 md:px-8 bg-white">
+  <h2 class="text-center text-xl font-semibold mb-8">----- Let's Collaborate -----</h2>
+  <div class="max-w-5xl mx-auto bg-white rounded-xl shadow-lg flex flex-col md:flex-row overflow-hidden">
+    <!-- Contact Info -->
+    <div class="bg-black text-white p-8 md:w-1/2 flex flex-col justify-between">
+      <div>
+        <h3 class="text-2xl font-bold mb-2">Contact Information</h3>
+        <p class="mb-6 text-gray-300">Say something to start a live chat!</p>
+        <div class="flex items-center mb-4">
+          <span class="material-icons mr-3">call</span>
+          <span>+91 8606794034</span>
+        </div>
+        <div class="flex items-center mb-4">
+          <span class="material-icons mr-3">email</span>
+          <span>arjunaacharry007@gmail.com</span>
+        </div>
+        <div class="flex items-center mb-6">
+          <span class="material-icons mr-3">location_on</span>
+          <span>Kunnamthanam, Pathanamthitta,<br>Kerala, India - 689581</span>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center mb-2">
+          <img src="/assets/Arjun%20A%20Acharry.png" alt="Arjun A Acharry" class="w-8 h-8 rounded-full mr-2" />
+          <span>Arjun A Acharry</span>
+        </div>
+        <div class="flex flex-wrap gap-4 text-gray-300">
+          <a href="#" class="hover:underline">LinkedIn</a>
+          <a href="#" class="hover:underline">Dribbble</a>
+          <a href="#" class="hover:underline">Instagram</a>
+          <a href="#" class="hover:underline">Blog.Inovus</a>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Form -->
+    <form class="p-8 md:w-1/2 bg-white">
+      <div class="flex flex-col md:flex-row gap-4 mb-4">
+        <div class="w-full">
+          <label class="block text-gray-700 mb-1">First Name</label>
+          <input type="text" class="input input-bordered w-full" placeholder="First Name" value="Samkrish" />
+        </div>
+        <div class="w-full">
+          <label class="block text-gray-700 mb-1">Last Name</label>
+          <input type="text" class="input input-bordered w-full" placeholder="Last Name" value="Doe" />
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row gap-4 mb-4">
+        <div class="w-full">
+          <label class="block text-gray-700 mb-1">Email</label>
+          <input type="email" class="input input-bordered w-full" placeholder="Email" />
+        </div>
+        <div class="w-full">
+          <label class="block text-gray-700 mb-1">Phone Number</label>
+          <input type="text" class="input input-bordered w-full font-bold" placeholder="Phone Number" value="+1 012 3456 789" />
+        </div>
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 mb-1">Select Subject?</label>
+        <div class="flex flex-wrap gap-4">
+          <label class="flex items-center gap-2">
+            <input type="radio" name="subject" class="radio checked:bg-black" checked />
+            Website Design
+          </label>
+          <label class="flex items-center gap-2">
+            <input type="radio" name="subject" class="radio" />
+            UX Design
+          </label>
+          <label class="flex items-center gap-2">
+            <input type="radio" name="subject" class="radio" />
+            App Design
+          </label>
+          <label class="flex items-center gap-2">
+            <input type="radio" name="subject" class="radio" />
+            Graphic Design
+          </label>
+          <label class="flex items-center gap-2">
+            <input type="radio" name="subject" class="radio" />
+            Others
+          </label>
+        </div>
+      </div>
+      <div class="mb-6">
+        <label class="block text-gray-700 mb-1">Message</label>
+        <textarea class="textarea textarea-bordered w-full" rows="3" placeholder="Write your message.."></textarea>
+      </div>
+      <div class="flex justify-end">
+        <button type="submit" class="btn btn-black text-white px-8 py-2 rounded shadow hover:bg-gray-900">Send Message</button>
+      </div>
+    </form>
+  </div>
+</section>
+    
+</body>
+</html>
